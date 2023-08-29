@@ -1,0 +1,126 @@
+.call {
+    max-width: 1275px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.call::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -130px;
+    width: 974px;
+    border-top: 15px solid #E5ECF4;
+}
+
+.call__menu__flex {
+    max-width: 1106px;
+    width: 100%;
+    display: flex;
+    column-gap: 30px;
+}
+
+.callsection {
+    margin: 0 auto;
+}
+
+.call__menu__flex__item {
+    max-width: 350px;
+    width: 100%;
+    z-index: 3;
+}
+
+.call__menu__flex__item__logo {
+    margin-bottom: 40px;
+    width: 96px;
+    height: 96px;
+}
+
+.call__menu__flex__item__inbox__title {
+    max-width: 350px;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+    text-align: left;
+    color: $title-color;
+    margin-bottom: 27px;
+}
+
+.call__menu__flex__item__inbox__paragrf {
+    max-width: 350px;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $p-color;
+}
+
+@media(max-width:768px) {
+    .call__menu__flex {
+        max-width: 573px;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 40px;
+        margin: 0 auto;
+    }
+    .call__menu__flex__item {
+        display: flex;
+        max-width: 573px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .call::before {
+        width: 0;
+        height: 512px;
+        border-left: 15px solid #E5ECF4;
+        top: -160px;
+        left: 135px;
+    }
+    .call__menu__flex__item__inbox__title,
+    .call__menu__flex__item__inbox__paragrf {
+        max-width: 398px;
+        width: 100%;
+    }
+    .call__menu__flex__item__inbox__paragrf {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:375px) {
+    .call::before {
+        display: none;
+    }
+    .call__menu__flex {
+        max-width: 311px;
+    }
+    .call__menu__flex__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .call__menu__flex__item__logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+    .call__menu__flex__item__inbox {
+        text-align: center;
+    }
+    .call__menu__flex__item__inbox__paragrf,
+    .call__menu__flex__item__inbox__title {
+        text-align: center;
+    }
+    .call__menu__flex__item__inbox__title {
+        font-size: 20px;
+    }
+    .call__menu__flex__item__inbox__paragrf {
+        max-width: 311px;
+    }
+}

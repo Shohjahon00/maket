@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@import './blocks/fonts';
+nav {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1106px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@import './blocks/mixien';
+@import './blocks/header';
+@import './blocks/veribels';
+@import './blocks/section-call';
+@import './blocks/section-function';
+@import './blocks/function_2';
+@import './blocks/function_3';
+@import './blocks/sticky_footer';
